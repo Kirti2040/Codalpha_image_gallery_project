@@ -60,6 +60,3 @@ Items that use `ph` (an Unsplash photo path) and `by` / `link` (photo credit) co
 - HTML5, CSS3 (grid, custom properties, transitions), vanilla JavaScript
 - Fonts: Inter and Space Grotesk from Google Fonts
 
-## Credits
-
-Photos by various photographers on [Unsplash](https://unsplash.com/?utm_source=image_gallery&utm_medium=referral). The photographer's name is shown with each photo in the lightbox.
