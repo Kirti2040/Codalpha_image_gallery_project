@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <h1>Image Gallery</h1>
+    <p>Tap a photo to open it. Use the arrow keys or swipe to move between images.</p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+
+  <main>
+    <section class="grid" id="grid" aria-live="polite"></section>
+  </main>
+
+  <p class="note">Photos from <a href="https://unsplash.com/?utm_source=image_gallery&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>. If a photo cannot load, a generated image is shown in its place. To use your own pictures, add <code>src: "photo.jpg"</code> to any item in the <code>IMAGES</code> list.</p>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close viewer">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#10094;</button>
+  <figure class="stage">
+    <img id="lbImg" alt="">
+    <figcaption><span id="lbTitle"></span><span id="lbCount"></span></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
